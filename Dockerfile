@@ -17,7 +17,4 @@ WORKDIR /app
 RUN pip3 install pipenv gunicorn
 RUN pipenv install --system --deploy --ignore-pipfile
 
-
 EXPOSE 5000
-
-CMD [ "gunicorn", "--bind", "0.0.0.0:5000", "--reload", "wsgi:app" ]
