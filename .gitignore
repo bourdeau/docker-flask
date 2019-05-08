@@ -11,3 +11,4 @@ config.py
 
 # IDE
 .ropeproject/
+.vscode

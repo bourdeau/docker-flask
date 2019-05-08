@@ -14,6 +14,7 @@ RUN apk --no-cache add --virtual \
 COPY . /app
 WORKDIR /app
 
+RUN pip3 install --upgrade pip3
 RUN pip3 install pipenv gunicorn
 RUN pipenv install --system --deploy --ignore-pipfile
 
